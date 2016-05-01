@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+:root {
+  --xRed: #ff4d4d;
+  --oBlue: #4d4dff;
+}
+
+body {
+  font-family: Lato;
+  background-color: #567;
+}
+
+.topWrapper {
+  margin: 50px auto 0;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.choiceBox {
+  position: relative;
+  border: 5px solid black;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-size: 3em;
+  background-color: var(--xRed);
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+.blueBackground {
+  background-color: var(--oBlue);
+}
+
+.xoSlider {
+  position: absolute;
+  width: 75px;
+  height: 100%;
+  background-color: #ccc;
+  border: 5px solid #eee;
+  box-sizing: border-box;
+  right: 0;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.coverClicked {
+  right: 75px;
+}
+
+.startGame {
+  width: 30%;
+  height: 67px;
+  font-size: 2em;
+  text-align: center;
+  line-height: 55px;
+  vertical-align: middle;
+  background-color: #33cc33;
+  border: 5px solid black;
+  box-sizing: border-box;
+  transition: all 0.05s ease-out;
+  -webkit-transition: all 0.05s ease-out;
+  -moz-transition: all 0.05s ease-out;
+  -o-transition: all 0.05s ease-out;
+}
+
+.startGame:hover {
+  background-color: #00ff00;
+}
+
+.startGame:active {
+  background-color: #009900;
+}
+
+.inProgress {
+  background-color: #f5d03d !important;
+}
+
+.gameBoard {
+  margin: 20px auto;
+  border: 4px solid black;
+  width: 300px;
+  height: 300px;
+  background-color: #554f55;
+}
+
+.gameRow {
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 100px;
+  display: flex;
+}
+
+.gameBox {
+  border: 3px solid black;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 5em;
+  text-align: center;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+}
+
+.X {
+  background-color: var(--xRed);
+}
+
+.O {
+  background-color: var(--oBlue);
+}
+
+.winColor {
+  background-color: #33cc33 !important;
+}
